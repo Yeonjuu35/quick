@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://www.7-eleven.co.kr/?mobile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 폰트 두께 추가 하고 싶으면 nnn; 로 추가하기 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+
+    <style>
+        body{
+            font-family: 'Noto Sans KR';
+            font-weight: 400;
+            height: 500vh;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }        
+        #quick{
+            position: fixed;
+            right: 0;
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+        }
+        #quick li{
+            width: 200px;
+        }
+        #quick li:nth-child(1) a{
+                background-color: skyblue
+            }
+        #quick li:nth-child(2) a{
+                background-color: pink;
+            }
+        #quick li:nth-child(3) a{
+                background-color: greenyellow;
+            }
+        #quick li:nth-child(4) a{
+                background-color: yellow;
+            }
+        #quick li:nth-child(5) a{
+                background-color: papayawhip;
+            }
+        #quick li a{
+            display: block;
+            transition: 0.5s;
+        }
+        #quick li:hover a{
+            margin-left: -120px;
+        }
+        #quick li i{
+            width: 80px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+</head>
+
+<body>
+    <aside id="quick">
+        <ul>
+            <li><a href=""><i class="bi bi-github"></i><strong>깃</strong></a></li>
+            <li><a href=""><i class="bi bi-youtube"></i><strong>유튜브</strong></a></li>
+            <li><a href=""><i class="bi bi-instagram"></i><strong>인스타그램</strong></a></li>
+            <li><a href=""><i class="bi bi-facebook"></i><strong>페이스북</strong></a></li>
+            <li><a href=""><i class="bi bi-arrow-up"></i><strong>위로</strong></a></li>
+        </ul>
+    </aside>
+</body>
+</html>
